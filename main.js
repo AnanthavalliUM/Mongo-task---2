@@ -251,6 +251,14 @@ db.zen.find({
 
   6. Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
   db.zen.find({"attendance.date":{$gte: 15 , $lte: 31}},{_id:0,attendance:{absent:1, date:1}, task:{notsubmit:1}})
+[
+  { attendance: { absent: 2, date: 15 } },
+  { attendance: { absent: 5, date: 16 } },
+  { attendance: { absent: 5, date: 17 } },
+  { attendance: { absent: 5, date: 18 } },
+  { attendance: { absent: 4, date: 29 } },
+  { attendance: { absent: 2, date: 30 } }
+]
 
  
 
